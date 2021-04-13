@@ -6,7 +6,7 @@ import Star from 'components/common/Icons/Star';
 import Fork from 'components/common/Icons/Fork';
 import { Wrapper, Grid, Item, Content, Stats, Languages } from './styles';
 
-export const Projects = () => {
+export const Github = () => {
   const { theme } = useContext(ThemeContext);
   const {
     github: {
@@ -45,8 +45,8 @@ export const Projects = () => {
     `
   );
   return (
-    <Wrapper as={Container} id="projects-2">
-      <h2>Projects</h2>
+    <Wrapper as={Container} id="projects">
+      <h2>Github</h2>
       <Grid>
         {edges.map(({ node }) => (
           <Item key={node.id} as="a" href={node.url} target="_blank" rel="noopener noreferrer" theme={theme}>
