@@ -12,23 +12,26 @@ const Home = withNavigationContext(({ fullpage }) => {
     <Section wrapper={false} backgroundColor="#292c35">
       <Content
         main={
-          <Lettering
-            title="INDEX"
-            text={[
-              "This is a single full page fixed screen.",
-              "Use the button bellow to navigate to the next page"
-            ]}
-          />
+          <div className="lettering">
+						<p style={{ color: "#de5375" }}>Hi! My name is</p>
+						<h1>Chris Png</h1>
+						<h1>
+							I build things for the web.
+            </h1>
+            <p>
+							Front-End Web Developer
+						</p>
+					</div>
         }
         action={
           <div className="button">
             <AwesomeButton
               size="large"
               onPress={() => {
-                fullpage.navigate("/page-two");
+                fullpage.navigate("/projects");
               }}
             >
-              Goto the next page
+              See more
             </AwesomeButton>
           </div>
         }

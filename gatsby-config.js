@@ -71,6 +71,19 @@ module.exports = {
         icon: './static/favicon/favicon-512.png',
       },
     },
+		// {
+    //   resolve: `gatsby-plugin-webfonts`,
+    //   options: {
+    //     fonts: {
+    //       google: [
+    //         {
+    //           family: `Poppins`,
+    //           variants: [`400`, `300`, `300i`],
+		// 				},
+    //       ],
+    //     },
+    //   },
+		// },
 		'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
